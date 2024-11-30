@@ -51,7 +51,7 @@ const postReducer = (state = initialState, action) => {
         case actionTypes.GET_POSTS_SUCCESS:
             return {
                 ...state,
-                posts: { ...state.posts, all: [...action.payload, ...state.posts.all] },
+                posts: { ...state.posts, all: [...state.posts.all,...action.payload,] },
                 loading: { ...state.loading, getPosts: false },
                 getPostStop:false
             };
