@@ -31,7 +31,7 @@ function App() {
       <div className='blur' style={{ bottom: "0%", left: "0" }} ></div>
       <Toast/>
       
-        <Routes>
+        <Routes basename="/socialmedia-frontend" >
           <Route path='/'  exact element={auth ? <Navigate to='/home' />:<Auth />} />
           <Route path='/home' exact element={auth ?   <Home/>:<Navigate to='/' />} />
           <Route path='/chat' exact element={auth ?  <Chat />:<Navigate to='/'/>} />
