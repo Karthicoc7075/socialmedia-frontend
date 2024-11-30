@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:8888/api/v2',
-    // baseURL: "https://dashboard-production-app-cf34728c58a8.herokuapp.com/api/v2",
+    // baseURL: 'http://localhost:8888/api/v2',
+    baseURL: "https://socialmedia-production-app-64946c721aef.herokuapp.com/api/v2",
     headers: {
         'accept': 'application/json'
     }
