@@ -14,7 +14,7 @@ function sidebar() {
         </div>
       <div className='sidebar-link-container'>
       <div className='sidebar-link-list' >
-         <Link className='sidebar-link' to='/home'><img className='icon' src={homeIcon}/> <span>Home</span></Link>
+         <Link className='sidebar-link' to='/'><img className='icon' src={homeIcon}/> <span>Home</span></Link>
          <Link className='sidebar-link' to='/chat'><img className='icon' src={chatIcon}/> <span>All chats</span></Link>
         
         </div>

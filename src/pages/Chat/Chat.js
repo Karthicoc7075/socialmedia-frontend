@@ -30,13 +30,18 @@ function Chat() {
 
   const server = 'http://localhost:8888';
   const socket = io(server);
-    useEffect(() => {
-      socket.on('connect', () => {
-          console.log('Connected to server', socket.id);
-       
-      });
-    }, [userId]);
-    socketRef.current = socket;
+
+  useEffect(() => {
+    socket.on('connect', () => {
+      console.log('connected');
+    });
+
+    return () => {
+      socket.disconnect();
+    };
+  }, []);
+
+  socketRef.current = socket;
 
     console.log(socketRef.current);
     
