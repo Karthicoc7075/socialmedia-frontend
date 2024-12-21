@@ -10,14 +10,14 @@ import Toaster from "../../components/Toaster/Toaster";
 
 
 function Auth() {
-  // const [firstName, setFirstName] = useState("Karthi");
-  // const [lastName, setLastName] = useState("P");
+  // const [firstname, setFirstname] = useState("Karthi");
+  // const [lastname, setLastname] = useState("P");
   // const [username, setUsername] = useState("Karthi");
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("");
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    firstname: '',
+    lastname: '',
     username: '',
     email: '',
     password: ''
@@ -39,12 +39,12 @@ function Auth() {
     const error = {}
 
     if (!isLogin) {
-      if (formData.firstName == '') {
-        error.firstName = "Firstname is required!!"
+      if (formData.firstname == '') {
+        error.firstname = "Firstname is required!!"
       }
 
-      if (formData.lastName == '') {
-        error.lastName = "Lastname is required!!"
+      if (formData.lastname == '') {
+        error.lastname = "Lastname is required!!"
       }
 
       if (formData.username == '') {
@@ -124,28 +124,28 @@ function Auth() {
                 <div className="form-name-group">
                   <div className="form-group">
                     <input
-                      className={inputErrors.firstName ? "inputField  input-error":"inputField"}
+                      className={inputErrors.firstname ? "inputField  input-error":"inputField"}
                       type="text"
                       placeholder="First name"
-                      // value={firstName}
-                      // onChange={(e) => setFirstName(e.target.value)}
+                      // value={firstname}
+                      // onChange={(e) => setFirstname(e.target.value)}
                       onChange={(e) => handleInput(e)}
-                      name="firstName"
+                      name="firstname"
                     />
-                    {inputErrors.firstName && <p className="error">{inputErrors.firstName}</p>}
+                    {inputErrors.firstname && <p className="error">{inputErrors.firstname}</p>}
                  
                   </div>
                   <div className="form-group">
                     <input
-                      className={inputErrors.lastName ? "inputField  input-error":"inputField"}
+                      className={inputErrors.lastname ? "inputField  input-error":"inputField"}
                       type="text"
                       placeholder="Last name "
-                      // value={lastName}
-                      // onChange={(e) => setLastName(e.target.value)}
+                      // value={lastname}
+                      // onChange={(e) => setLastname(e.target.value)}
                       onChange={(e) => handleInput(e)}
-                      name="lastName"
+                      name="lastname"
                     />
-                    {inputErrors.lastName && <p className="error">{inputErrors.lastName}</p>}
+                    {inputErrors.lastname && <p className="error">{inputErrors.lastname}</p>}
                   </div>
                 </div>
                 <div className="form-group">

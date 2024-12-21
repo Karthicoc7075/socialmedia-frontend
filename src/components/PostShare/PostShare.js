@@ -4,7 +4,7 @@ import picIcon from '../../assets/icons/picture.png'
 import videoIcon from '../../assets/icons/video.png'
 import gifIcon from '../../assets/icons/gif.png'
 import axios from 'axios'
-import { API } from '../../api'
+
 import { useDispatch, useSelector } from 'react-redux'
 import { createPost } from '../../features/post/actions/postActions'
 import { getAuthSelector } from '../../features/auth/selectors/authSelector'
